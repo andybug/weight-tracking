@@ -14,3 +14,6 @@ set format x '%m-%d'
 # plot it
 plot './data/data.csv' using 1:2 title 'readings' with points lw 2 lc rgb '#ff9933', \
      '' using 1:2 title 'approximation' smooth bezier with lines lw 2 lc rgb '#0099ff'
+
+# wait
+pause -1
