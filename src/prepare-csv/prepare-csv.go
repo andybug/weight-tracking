@@ -4,11 +4,9 @@ import "os"
 import "fmt"
 import "encoding/csv"
 
-const usage string =
-	"prepare-csv <filename.csv>\n" +
-    "    prepares file for parsing by gnuplot\n" +
+const usage string = "prepare-csv <filename.csv>\n" +
+	"    prepares file for parsing by gnuplot\n" +
 	"    writes to stdout"
-
 
 /* read all records from csv file */
 func read_csv(filename string) (records [][]string) {
@@ -27,7 +25,6 @@ func read_csv(filename string) (records [][]string) {
 
 	return records
 }
-
 
 func main() {
 	args := os.Args[1:]
